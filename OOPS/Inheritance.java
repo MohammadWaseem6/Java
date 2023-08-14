@@ -1,7 +1,7 @@
 package OOPS;
 
 public class Inheritance {
- 
+
     public static void main(String[] args) {
         // Creating an instance of Fish and calling its methods
         Fish f1 = new Fish();
