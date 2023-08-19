@@ -4,8 +4,9 @@ public class RecurssionBasics {
             System.out.println(" " + n);
             return;
         }
+        // PrintDec(n - 1);//increasing order
         System.out.print(" " + n);
-        PrintDec(n - 1);// recurssive case
+        PrintDec(n - 1); // decereasing order
     }
 
     public static void main(String[] args) {

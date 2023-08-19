@@ -5,7 +5,7 @@ public class Inheritance {
     public static void main(String[] args) {
         // Creating an instance of Fish and calling its methods
         Fish f1 = new Fish();
-        f1.breathe();
+        f1.breathe();date
         f1.eat();
         f1.swims();
 
