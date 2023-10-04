@@ -4,7 +4,7 @@ package PRACTICE;
 public class RecursionPractice {
 
     public static void main(String[] args) {
-        System.out.println(fibo(5));
+        System.out.println(fibo(10));
 
     }
 

@@ -1,4 +1,4 @@
-package ARRAYS;
+package array;
 
 public class Kadanes {
     public static void kadans(int numbers[]) {

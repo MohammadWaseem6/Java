@@ -47,7 +47,7 @@ public class LinkedList {
   public void displayList() {
     Node current = head;
     while (current != null) {
-      System.out.print( current.data+"->");
+      System.out.print(current.data + "->");
       current = current.next;
     }
     System.out.println("null");
@@ -69,7 +69,7 @@ public class LinkedList {
     ll.displayList();
     ll.addLast(50);
     ll.displayList();
-     ll.addLast(60);
+    ll.addLast(60);
     ll.displayList();
   }
 }

@@ -7,7 +7,7 @@ public class allprime2 {
               if (n % i == 0) return false;
             }
             return true;
-         }
+          }
         public static void primerange(int n)
         {
     for(int i = 2; i<=n; i++)

@@ -1,5 +1,3 @@
-package ARRAYS;
-
 public class TrappingRainWater {
     public static int TrappedRainWater(int height[]) {
         int n = height.length;
@@ -13,13 +11,14 @@ public class TrappingRainWater {
         for (int i = n - 2; i >= 0; i--) {
             rightMax[i] = Math.max(height[i], rightMax[i + 1]);
         }
-        int trappedwater = 0;
-        for (int i = 0; i < n; i++) {
-            int waterlevel = Math.min(leftMax[i], rightMax[i]);
-            trappedwater += waterlevel - height[i];
+            int trappedwater = 0;
+            for (int i = 0; i < n; i++) {
+                int waterlevel = Math.min(leftMax[i], rightMax[i]);
+                trappedwater += waterlevel - height[i];
+            }
+            return trappedwater;
         }
-        return trappedwater;
-    }
+
 
     public static void main(String[] args) {
         int height[] = { 4, 2, 0, 6, 3, 2, 0, 5 };
