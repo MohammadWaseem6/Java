@@ -1,7 +1,8 @@
 package Trees;
 
 /**
- * The `SubTreeof_Another_Tree` class checks if one binary tree is a subtree of another binary tree.
+ * The `SubTreeof_Another_Tree` class checks if one binary tree is a subtree of
+ * another binary tree.
  */
 public class SubTreeof_Another_Tree {
     /**
@@ -66,7 +67,8 @@ public class SubTreeof_Another_Tree {
     }
 
     /**
-     * Main method for testing the isSubtree function with a sample binary tree and subtree.
+     * Main method for testing the isSubtree function with a sample binary tree and
+     * subtree.
      *
      * @param args Command-line arguments (not used).
      */

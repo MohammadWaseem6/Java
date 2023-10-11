@@ -1,19 +1,29 @@
 import java.util.*;
+
 /**
- * The TopViewOfTree class is used to find and print the top view of a binary tree.
- * The top view of a binary tree is the set of nodes visible when the tree is viewed from the top.
- * It means the nodes that would be encountered first when we look at the tree from the top, considering
+ * The TopViewOfTree class is used to find and print the top view of a binary
+ * tree.
+ * The top view of a binary tree is the set of nodes visible when the tree is
+ * viewed from the top.
+ * It means the nodes that would be encountered first when we look at the tree
+ * from the top, considering
  * the horizontal distance (hd) of each node from the root node.
  *
- * The class includes a static method `topView` which takes the root node of the binary tree as input and
+ * The class includes a static method `topView` which takes the root node of the
+ * binary tree as input and
  * prints the top view of the tree.
  *
- * The binary tree is represented using a nested Node class, where each Node has an integer data value,
- * a leftChild reference to the left subtree, and a rightChild reference to the right subtree.
+ * The binary tree is represented using a nested Node class, where each Node has
+ * an integer data value,
+ * a leftChild reference to the left subtree, and a rightChild reference to the
+ * right subtree.
  *
- * The algorithm uses a level order traversal (BFS) approach to traverse the tree and store the nodes
- * at each horizontal distance (hd) from the root in a HashMap. Then it prints the nodes in the HashMap
- * in the order of their horizontal distance, giving us the top view of the tree.
+ * The algorithm uses a level order traversal (BFS) approach to traverse the
+ * tree and store the nodes
+ * at each horizontal distance (hd) from the root in a HashMap. Then it prints
+ * the nodes in the HashMap
+ * in the order of their horizontal distance, giving us the top view of the
+ * tree.
  *
  * Usage:
  * Node root = new Node(1);
@@ -48,7 +58,8 @@ public class TopViewOfTree {
 
     /**
      * Nested Info class to store information about a node during traversal.
-     * It contains a reference to the node and its horizontal distance (hd) from the root.
+     * It contains a reference to the node and its horizontal distance (hd) from the
+     * root.
      */
     static class Info {
         Node node;
@@ -77,7 +88,8 @@ public class TopViewOfTree {
             return;
         }
 
-        // Initialize a queue for level order traversal and a HashMap to store nodes by horizontal distance.
+        // Initialize a queue for level order traversal and a HashMap to store nodes by
+        // horizontal distance.
         Queue<Info> q = new LinkedList<>();
         HashMap<Integer, Node> map = new HashMap<>();
         int min = 0, max = 0;
@@ -90,7 +102,8 @@ public class TopViewOfTree {
         while (!q.isEmpty()) {
             Info curr = q.remove();
             if (curr == null) {
-                // If the current node is a null marker, add another null marker if the queue is not empty.
+                // If the current node is a null marker, add another null marker if the queue is
+                // not empty.
                 if (q.isEmpty()) {
                     break;
                 } else {
